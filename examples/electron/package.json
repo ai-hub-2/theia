@@ -65,6 +65,7 @@
     "@theia/metrics": "1.63.0",
     "@theia/mini-browser": "1.63.0",
     "@theia/monaco": "1.63.0",
+    "@theia/terminal-manager": "1.39.0",
     "@theia/navigator": "1.63.0",
     "@theia/outline-view": "1.63.0",
     "@theia/output": "1.63.0",
