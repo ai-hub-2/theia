@@ -20,11 +20,12 @@ import {
     codicon,
     KeybindingContribution,
     KeybindingRegistry,
+    MAXIMIZED_CLASS,
     Widget,
 } from '@theia/core/lib/browser';
 import { CommandRegistry, Emitter, MenuModelRegistry } from '@theia/core';
 import { TabBarToolbarContribution, TabBarToolbarRegistry } from '@theia/core/lib/browser/shell/tab-bar-toolbar';
-import { BOTTOM_AREA_ID, MAXIMIZED_CLASS } from '@theia/core/lib/browser/shell/theia-dock-panel';
+import { BOTTOM_AREA_ID } from '@theia/core/lib/browser/shell/theia-dock-panel';
 import { TerminalManagerCommands, TerminalManagerTreeTypes, TERMINAL_MANAGER_TREE_CONTEXT_MENU } from './terminal-manager-types';
 import { TerminalManagerWidget } from './terminal-manager-widget';
 import { TerminalManagerTreeWidget } from './terminal-manager-tree-widget';

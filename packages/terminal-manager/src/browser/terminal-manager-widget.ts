@@ -33,7 +33,7 @@ import {
     WidgetManager,
 } from '@theia/core/lib/browser';
 import { CommandService, Emitter } from '@theia/core';
-import { UUID } from '@theia/core/shared/@phosphor/coreutils';
+import { UUID } from '@theia/core/shared/@lumino/coreutils';
 import { TerminalWidget, TerminalWidgetOptions } from '@theia/terminal/lib/browser/base/terminal-widget';
 import { TerminalWidgetImpl } from '@theia/terminal/lib/browser/terminal-widget-impl';
 import { FrontendApplicationStateService } from '@theia/core/lib/browser/frontend-application-state';
@@ -85,7 +85,6 @@ export class TerminalManagerWidget extends BaseWidget implements StatefulWidget,
     static ID = 'terminal-manager-widget';
     static LABEL = 'Terminal Manager';
 
-    override layout: PanelLayout;
     protected panel: SplitPanel;
 
     protected pageAndTreeLayout: SplitLayout | undefined;
@@ -211,7 +210,7 @@ export class TerminalManagerWidget extends BaseWidget implements StatefulWidget,
     }
 
     protected createPageAndTreeLayout(relativeSizes?: TerminalManagerWidgetState.PanelRelativeSizes): void {
-        this.layout = new PanelLayout();
+        const layout = this.layout = new PanelLayout();
         this.pageAndTreeLayout = new SplitLayout({
             renderer: SplitPanel.defaultRenderer,
             orientation: 'horizontal',
@@ -221,7 +220,7 @@ export class TerminalManagerWidget extends BaseWidget implements StatefulWidget,
             layout: this.pageAndTreeLayout,
         });
 
-        this.layout.addWidget(this.panel);
+        layout.addWidget(this.panel);
         this.resolveMainLayout(relativeSizes);
         this.update();
     }
