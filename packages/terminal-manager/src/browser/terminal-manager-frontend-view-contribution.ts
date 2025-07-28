@@ -31,7 +31,6 @@ import { TerminalManagerWidget } from './terminal-manager-widget';
 import { TerminalManagerTreeWidget } from './terminal-manager-tree-widget';
 import { AlertDialogFactory } from './terminal-manager-alert-dialog';
 
-/* eslint-disable max-lines-per-function */
 @injectable()
 export class TerminalManagerFrontendViewContribution extends AbstractViewContribution<TerminalManagerWidget>
     implements TabBarToolbarContribution, KeybindingContribution {
@@ -73,7 +72,6 @@ export class TerminalManagerFrontendViewContribution extends AbstractViewContrib
             execute: () => this.createNewTerminalPage(),
             isVisible: (
                 ...args: TerminalManagerTreeTypes.ContextMenuArgs
-                // eslint-disable-next-line max-len
             ) => args[0] instanceof TerminalManagerWidget,
         });
         commands.registerCommand(TerminalManagerCommands.MANAGER_DELETE_TERMINAL, {
