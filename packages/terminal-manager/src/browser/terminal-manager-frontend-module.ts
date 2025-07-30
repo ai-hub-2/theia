@@ -25,14 +25,20 @@ import { TabBarToolbarContribution } from '@theia/core/lib/browser/shell/tab-bar
 import { PreferenceProxyFactory } from '@theia/core/lib/browser/preferences/injectable-preference-proxy';
 import { TerminalManagerWidget } from './terminal-manager-widget';
 import { TerminalManagerFrontendViewContribution } from './terminal-manager-frontend-view-contribution';
+import { TerminalManagerFrontendContribution } from './terminal-manager-frontend-contribution';
 import { TerminalManagerPreferenceContribution, TerminalManagerPreferences, TerminalManagerPreferenceSchema } from './terminal-manager-preferences';
 import { TerminalManagerTreeWidget } from './terminal-manager-tree-widget';
 import { bindGenericErrorDialogFactory } from './terminal-manager-alert-dialog';
 import '../../src/browser/terminal-manager.css';
+import { CommandContribution } from '@theia/core';
 
 export default new ContainerModule((bind: interfaces.Bind) => {
     bindViewContribution(bind, TerminalManagerFrontendViewContribution);
     bind(TabBarToolbarContribution).toService(TerminalManagerFrontendViewContribution);
+
+    // Bind the command contribution for overridden terminal commands
+    bind(TerminalManagerFrontendContribution).toSelf().inSingletonScope();
+    bind(CommandContribution).toService(TerminalManagerFrontendContribution);
 
     bind(WidgetFactory).toDynamicValue(({ container }) => ({
         id: TerminalManagerTreeWidget.ID,

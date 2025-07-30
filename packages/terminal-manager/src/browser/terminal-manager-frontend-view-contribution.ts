@@ -51,6 +51,7 @@ export class TerminalManagerFrontendViewContribution extends AbstractViewContrib
 
     override registerCommands(commands: CommandRegistry): void {
         super.registerCommands(commands);
+
         commands.registerCommand(TerminalManagerCommands.MANAGER_NEW_TERMINAL_GROUP, {
             execute: (
                 ...args: TerminalManagerTreeTypes.ContextMenuArgs

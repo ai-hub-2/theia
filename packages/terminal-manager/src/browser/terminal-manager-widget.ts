@@ -148,13 +148,14 @@ export class TerminalManagerWidget extends BaseWidget implements StatefulWidget,
         }
     }
 
-    async createTerminalWidget(): Promise<TerminalWidget> {
+    async createTerminalWidget(options: TerminalWidgetOptions = {}): Promise<TerminalWidget> {
         const terminalWidget = await this.terminalFrontendContribution.newTerminal({
             // passing 'created' here as a millisecond value rather than the default `new Date().toString()` that Theia uses in
             // its factory (resolves to something like 'Tue Aug 09 2022 13:21:26 GMT-0500 (Central Daylight Time)').
             // The state restoration system relies on identifying terminals by their unique options, using an ms value ensures we don't
             // get a duplication since the original date method is only accurate to within 1s.
             created: new Date().getTime().toString(),
+            ...options,
         } as TerminalWidgetOptions);
         terminalWidget.start();
         return terminalWidget;
