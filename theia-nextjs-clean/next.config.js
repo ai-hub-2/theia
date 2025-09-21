@@ -6,8 +6,7 @@ const nextConfig = {
   distDir: 'dist',
   images: {
     unoptimized: true
-  },
-  outputFileTracingRoot: '/workspace/theia-nextjs'
+  }
 }
 
 module.exports = nextConfig

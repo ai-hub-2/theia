@@ -10,10 +10,6 @@
       "dest": "/browser-only/$1"
     },
     {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
       "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|map))",
       "dest": "/$1"
     },
