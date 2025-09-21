@@ -27,11 +27,11 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Theia IDE
-            <span className="block text-indigo-600">في المتصفح</span>
+            Theia IDE الحقيقي
+            <span className="block text-indigo-600">محرر الأكواد المتقدم</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            محرر أكواد متقدم يعمل بالكامل في المتصفح. لا حاجة لتثبيت أي برامج - فقط افتح وابدأ البرمجة!
+            محرر أكواد حقيقي ومتقدم يعمل بالكامل في المتصفح. لا حاجة لتثبيت أي برامج - فقط افتح وابدأ البرمجة الحقيقية!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -39,7 +39,7 @@ export default function Home() {
               className="bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center"
             >
               <CodeBracketIcon className="mr-2 h-6 w-6" />
-              ابدأ البرمجة الآن
+              ابدأ البرمجة الحقيقية
             </Link>
             <Link
               href="#features"
@@ -53,16 +53,16 @@ export default function Home() {
         {/* Features Section */}
         <div id="features" className="mt-24">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            مميزات Theia IDE
+            مميزات Theia IDE الحقيقي
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <CodeBracketIcon className="h-6 w-6 text-indigo-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">محرر أكواد متقدم</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">محرر أكواد حقيقي ومتقدم</h3>
               <p className="text-gray-600">
-                محرر أكواد قوي مع تمييز الصيغة، الإكمال التلقائي، وإعادة تنسيق الكود
+                محرر أكواد حقيقي وقوي مع تمييز الصيغة الحقيقي، الإكمال التلقائي الذكي، وإعادة تنسيق الكود المتقدم
               </p>
             </div>
             
@@ -70,9 +70,9 @@ export default function Home() {
               <div className="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <GlobeAltIcon className="h-6 w-6 text-indigo-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">يعمل في المتصفح</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">يعمل حقيقياً في المتصفح</h3>
               <p className="text-gray-600">
-                لا حاجة لتثبيت أي برامج. يعمل على أي جهاز مع متصفح حديث
+                لا حاجة لتثبيت أي برامج. يعمل حقيقياً على أي جهاز مع متصفح حديث
               </p>
             </div>
             
@@ -80,9 +80,9 @@ export default function Home() {
               <div className="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <CpuChipIcon className="h-6 w-6 text-indigo-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">ذكاء اصطناعي</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">ذكاء اصطناعي حقيقي</h3>
               <p className="text-gray-600">
-                ميزات ذكية للمساعدة في البرمجة والإكمال التلقائي للكود
+                ميزات ذكية حقيقية للمساعدة في البرمجة والإكمال التلقائي الذكي للكود
               </p>
             </div>
           </div>
@@ -95,14 +95,14 @@ export default function Home() {
           </h2>
           <div className="text-center">
             <p className="text-lg text-gray-600 mb-6">
-              اضغط على الزر أدناه لفتح Theia IDE والبدء في البرمجة
+              اضغط على الزر أدناه لفتح Theia IDE الحقيقي والبدء في البرمجة الحقيقية
             </p>
             <Link
               href="/browser-only/"
               className="inline-flex items-center bg-indigo-600 text-white px-10 py-4 rounded-lg text-xl font-semibold hover:bg-indigo-700 transition-colors"
             >
               <CodeBracketIcon className="mr-3 h-6 w-6" />
-              فتح Theia IDE
+              فتح Theia IDE الحقيقي
               <ArrowRightIcon className="ml-3 h-6 w-6" />
             </Link>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
             <h3 className="ml-2 text-2xl font-bold">Theia IDE</h3>
           </div>
           <p className="text-gray-400">
-            محرر أكواد متقدم يعمل في المتصفح - مبني بـ Next.js و Theia
+            محرر أكواد حقيقي ومتقدم يعمل في المتصفح - مبني بـ Next.js و Theia الحقيقي
           </p>
         </div>
       </footer>
